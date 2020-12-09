@@ -1,4 +1,4 @@
-const Post = require('../Models/notification');
+const Post = require('../Models/post');
 const User = require('../models/user');
 
 exports.PostNotification = (request, response, next) => {

@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
-const notificationRoutes = require('./Routes/notification');
+const notificationRoutes = require('./Routes/post');
 const authRoute = require('./Routes/auth');
 const helmet= require('helmet');
 const compression = require('compression');
