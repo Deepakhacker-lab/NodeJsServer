@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
-const notificationRoutes = require('./Routes/post');
+const postRoute = require('./Routes/post');
 const authRoute = require('./Routes/auth');
 const helmet= require('helmet');
 const compression = require('compression');
@@ -15,7 +15,7 @@ app.use((request, response, next) => {
     next();
 });
 app.use(bodyParser.json());
-app.use('/notification', notificationRoutes);
+app.use('/notification', postRoute);
 app.use('/auth', authRoute);
 app.use(helmet());
 app.use(compression());
