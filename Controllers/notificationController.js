@@ -1,5 +1,5 @@
-const Post = require('../Models/post');
-const User = require('../models/user');
+const Post = require('../Models/postModel');
+const User = require('../Models/userModel');
 
 exports.PostNotification = (request, response, next) => {
   const user = request.body.userId;

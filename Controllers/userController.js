@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const { request } = require('express');
 const jwt = require('jsonwebtoken');
 
-const User = require('../models/user');
+const User = require('../Models/userModel');
 
 exports.signup = (request, response, next) => {
   const email = request.body.email;
